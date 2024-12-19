@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groove Music</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-overlay"></div>
+    <div id="app">
+      <header>
+        <h1>Groove Music</h1>
+      </header>
+      
+      <main>
+        <div class="music-player">
+          <div class="now-playing">
+            <img src="https://picsum.photos/200" alt="Album Art" class="album-art" />
+            <div class="track-info">
+              <h2 id="track-title">Summer Vibes</h2>
+              <p id="artist">Cool Artist</p>
+            </div>
+          </div>
+          
+          <div class="controls">
+            <button id="prev" class="control-btn">⏮</button>
+            <button id="play" class="control-btn">▶</button>
+            <button id="next" class="control-btn">⏭</button>
+          </div>
+          
+          <div class="progress-bar">
+            <div id="progress"></div>
+          </div>
+          
+          <div class="time">
+            <span id="current-time">0:00</span>
+            <span id="duration">3:30</span>
+          </div>
+        </div>
+
+        <div class="playlist">
+          <h3>Playlist</h3>
+          <ul id="tracks">
+            <li class="track active">Summer Vibes - Cool Artist</li>
+            <li class="track">Chill Mode - Relaxed Band</li>
+            <li class="track">Dancing Mood - Happy Group</li>
+            <li class="track">Sunset Dreams - Beach Waves</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
